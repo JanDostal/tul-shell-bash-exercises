@@ -1,1 +1,1 @@
-# tul-shell-exercises
+# tul-shell-bash-exercises
