@@ -1,0 +1,38 @@
+Používal jsem editor nano pro uložení a kopírování ascii obrázku.
+
+Dále jsem používal online editor https://sed.js.org/ pro otestování použití správného regulárního výrazu i substituce na ošetření vstupu obrázku a vložení echo příkazu na každý řádek obrázku.
+
+Když jsem si ověřil správný regulární výraz a substituci, tak jsem vložil substituci i regulární výraz do příkazu sed v shellu.
+
+
+Postup:
+
+1) Vytvořím si dva soubory obrazek.txt a jan.dostal.sh
+
+2) Obrázek si uložím z webu do obrazek.txt
+
+3) Nakopíruji si obrázek ze souboru obrazek.txt do https://sed.js.org/ a začnu experimentovat s ošetřením vstupu (online editor simuluje syntaxi sed příkazu)
+
+4) Ze stránky https://www.ibm.com/docs/en/odm/version-missing?topic=literals-strings jsem si zjistil, že prakticky bude potřeba escapovat v obrázku tyto znaky: ",',\ protože mají speciální význam v rámci stringu
+
+Dále ze stránky https://www.oreilly.com/library/view/learning-the-bash/1565923472/ch01s09.html jsem si zjistil, že dané special charactery v tabulce bude také potřeba escapovat v obrázku, protože mají speciální význam v shellu
+
+Z webu https://www.threesl.com/blog/special-characters-regular-expressions-escape/ jsem si zjistil, že backlash a další se v regular expression musí escapovat pro interpretování doslovně.
+
+Dále jsem experimentováním zjistil, že jelikož se regular expression používá uvnitř stringu, který má delimiter ", tak uvnitř regular expression se musí " escapovat taky.
+
+Dále jsem experimentováním zjistil, že substituční placeholder &, před kterým chci backlash tak musí být zapsán jako \\\&, aby byl interpretován jako \&
+
+5) Vznikne mi ve výsleku tento regulární výraz a substituce: "s/[][}{\\\"~\`#\$&\*\|\?\!]/\\\&/g".
+
+6) Výsledek z 5. bodu použiji v shellu v příkazu: sed regular_expression obrazek.txt > jan.dostal.sh
+
+7) Nakopíruji si obrázek ze souboru jan.dostal.sh do https://sed.js.org/ a začnu experimentovat s vložením příkazu echo na každý řádek (online editor simuluje syntaxi sed příkazu)
+
+8) Vznikne mi ve výsleku tento regulární výraz a substituce: 's/.*/echo "&"/'.
+
+9) Výsledek ze 8. bodu použiji v shellu v příkazu: sed -i regular_expression jan.dostal.sh
+
+10) Do záhlaví souboru jan.dostal.sh přidám #!/bin/bash
+
+11) použiji v shellu příkaz bash jan.dostal.sh
