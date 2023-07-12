@@ -20,16 +20,3 @@ do
                         echo "$symbolic_link_name odkazuje na $symbolic_link_path ale cílový soubor neexistuje a tedy nemá vlastníka"
                fi
 done
-
-
-
-
-
-
-jan.dostal@perun:~$ ./najdi_symlink.sh /home/jana
-otravny_virus.sh odkazuje na /home/jana/susenka.sh s vlastníkem jana
-passwd_copy odkazuje na /etc/passwd s vlastníkem root
-jan.dostal@perun:~$ ./najdi_symlink.sh /home/sh/petr.mikenda
-ahoj odkazuje na /home/jana/ahoj, ale cílový soubor neexistuje a tedy nemá vlastníka
-jan.dostal@perun:~$ ./najdi_symlink.sh
-Zadej v parametru existujici adresar

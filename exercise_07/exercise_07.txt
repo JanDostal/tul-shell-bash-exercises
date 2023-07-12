@@ -1,0 +1,10 @@
+jan.dostal@perun:~$ bash kafe_nebo_caj.sh
+Das si kafe nebo caj?
+caj
+Da si caj
+
+jan.dostal@perun:~$ bash kafe_nebo_caj.sh
+Das si kafe nebo caj?
+caj
+Da si caj
+Trvalo mu to vymyslet: 0h 0m 6s 938ms

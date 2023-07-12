@@ -5,11 +5,6 @@ echo "Das si kafe nebo caj?"
 read odpoved
 echo "Da si $odpoved"
 
-jan.dostal@perun:~$ bash kafe_nebo_caj.sh
-Das si kafe nebo caj?
-caj
-Da si caj
-
 #2. uloha
 #!/bin/bash
 
@@ -27,9 +22,3 @@ else
 endMiliseconds=$(date +'%s%3N')
 fi
 done
-
-jan.dostal@perun:~$ bash kafe_nebo_caj.sh
-Das si kafe nebo caj?
-caj
-Da si caj
-Trvalo mu to vymyslet: 0h 0m 6s 938ms
