@@ -1,10 +1,10 @@
-## Popis
+## Description
 
-- Jedná se o jednotlivá cvičení, která jsem postupně samostatně vypracovával v rámci předmětu týkajícího se Bashe a Linuxu na Technické univerzitě v Liberci
-- Cvičení tvoří příkazy zadané do příkazové řádky, výpisy z konzole a Bash skripty
-- Cvičení se odevzdávala na E-learning, který je poskytován TUL
+- These are individual exercises that I have been working on independently in the university course related to Bash and Linux at the Technical University in Liberec
+- The exercises consist of unix commands typed into the command line, unix commands outputs and Bash scripts
+- Exercises were submitted to E-learning, which is provided by TUL
 
-## Informace o vypracovávání
+## Info about work process regarding exercises
 
-- Jednotlivá cvičení se vypracovávala v období říjen 2022 až prosinec 2022
-- Cvičení byla nahrána z E-learningu do tohoto repozitáře v červenci 2023, tedy po skončení 1. ročníku na TUL
+- Individual exercises were being worked on between october 2022 and december 2022
+- The exercises were uploaded from E-learning to this repository in july 2023, after the end of the 1st year at TUL
