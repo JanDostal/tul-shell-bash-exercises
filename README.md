@@ -6,5 +6,5 @@
 
 # Info about work process regarding exercises
 
-- Individual exercises were being worked on between october 2022 and december 2022
-- The exercises were uploaded from E-learning to this repository in july 2023, after the end of the 1st year at TUL
+- Individual exercises were being worked on between October 2022 and December 2022
+- The exercises were uploaded from E-learning to this repository in July 2023, after the end of the 1st year at TUL
